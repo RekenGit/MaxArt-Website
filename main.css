@@ -1,0 +1,145 @@
+:root {
+    /* var(--main-color); */
+    --main-color: #fffbf2;
+    --second-main-color: #757b7e;
+    --main-text-color: #1669CB;
+
+    --small-logo-icon-size: 120px;
+    --midum-logo-icon-size: 340px;
+    --large-logo-icon-size: 600px;
+}
+
+/*#region MainView*/
+body {
+    background-color: var(--second-main-color);
+    height: 3000px;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+h1 {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 60px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.409);
+}
+
+#start-view {
+    background-image: url('Images/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#info-view {
+    z-index: 1;
+    position: relative;
+}
+
+
+/*#endregion*/
+
+/*#region MainViewElementas*/
+.gray-element {
+    background-color: var(--second-main-color);
+}
+
+#contact-scroll-bar {
+    height: 300px;
+    width: 120%;
+    position: absolute;
+    transform: rotate(-4deg);
+    left: -10%;
+    top: calc(100vh - 150px);
+    z-index: 0;
+}
+
+#contact-catch-phrase {
+    color: var(--main-text-color);
+    position: relative;
+    padding-left: 45%;
+    top: -150px;
+}
+
+#info-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-view-content-section {
+    width: 50%;
+}
+
+#info-view-box-gray {
+    z-index: -1;
+    position: absolute;
+}
+
+/*#endregion*/
+
+/*#region Menu*/
+#menu-icon {
+    height: var(--small-logo-icon-size);
+    width: var(--small-logo-icon-size);
+    background-color: var(--main-color);
+    border: 20px solid var(--main-color);
+    border-radius: 0 0 10px 0;
+    position: fixed;
+    z-index: 10;
+    filter: drop-shadow(3px 4px 2px #22222240);
+    animation: menu-icon-moving 30s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    height: calc(var(--small-logo-icon-size) + 2px);
+    width: calc(var(--small-logo-icon-size) + 2px);
+    border: 19px solid var(--main-color);
+}
+
+.menu-icon_hidden_bg {}
+
+@keyframes menu-icon-moving {
+    from {
+        transform: rotate(0deg);
+    }
+
+    1% {
+        transform: rotate(-1deg);
+    }
+
+    2% {
+        transform: rotate(1deg);
+    }
+
+    3% {
+        transform: rotate(0deg);
+    }
+}
+
+#menu-bar {
+    height: 100vh;
+    width: 500px;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    background-color: var(--main-color);
+    transition: all 1.6s ease;
+    display: flex;
+}
+
+.menu-bar-hidden {
+    left: -500px !important;
+}
+
+/*#endregion*/

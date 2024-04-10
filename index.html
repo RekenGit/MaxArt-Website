@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxArt</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="start-view">
+        <img id="menu-icon" src="Images/maxart-logo.svg"></img>
+        <div id="menu-bar" class="menu-bar-hidden">
+            <div id="menu-bar-options"></div>
+            <div>
+                <a href="#start-view">Strona główna</a>
+                <a href="#contact-view">Kontakt</a>
+                <a href="#info-view">O nas<a>
+                <a href="#">Galeria<a>
+                <a href="#">Realizacja<a>
+                <a href="#">Oferta<a>
+            </div>
+        </div>
+
+    </div>
+    <div id="second-tab-view">
+        <div id="contact-view">
+            <div class="gray-element" id="contact-scroll-bar">
+                <h1 id="contact-catch-phrase">Z nami wykonasz każdy projekt</h1>
+            </div>
+        </div>
+        <div id="info-view">
+            <div id="info-view-content-section">
+                <svg id="info-view-box-gray" xmlns="http://www.w3.org/2000/svg" width="923" height="494" viewBox="0 0 923 494" fill="none">
+                    <path d="M0 112L881 0L923 251L773 494H0V112Z" fill="#D9D9D9"/>
+                </svg>
+                <h1>Kontakt</h1>
+                <p>Nr tel: 601 277 794</br>Mail: hello@maxart.waw.pl</p>
+            </div>
+            <div id="info-view-mail-section">
+                <img id="info-view-mail-icon" src="Images/icon-mail.png"></img>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="menu.js"></script>
+</html>
