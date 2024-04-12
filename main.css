@@ -238,6 +238,18 @@ a:hover {
     justify-content: center;
 }
 
+#contact-view-mail-content:hover img {
+    transform: rotate(5deg);
+}
+
+#contact-view-mail-content img {
+    transition: all .2 ease;
+}
+
+#contact-view-mail-content p {
+    font-size: 30px;
+}
+
 #contact-view-data tr td:first-child {
     width: 150px;
 }
