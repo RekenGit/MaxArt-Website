@@ -277,11 +277,12 @@ a:hover {
     height: 400px;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 2px #22222280);
 }
 
 .info-view-conntent-part-photo img {
     width: 100%;
-    filter: drop-shadow(5px 5px 2px #22222280);
 }
 
 .info-view-conntent-part-text {
@@ -322,6 +323,39 @@ a:hover {
     background-color: var(--main-color);
     clip-path: polygon(0 50%, 0% 100%, 100% 100%, 100% 70%, 80% 0);
     top: -300px;
+}
+
+#carousel {
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#carousel .item {
+    transition: all .3s ease;
+    background-image: url("Images/carousel/carTemp1.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 600px;
+    filter: blur(2px) grayscale(50%);
+}
+
+#carousel .item:hover {
+    filter: blur(0) grayscale(0);
+}
+
+#carousel .carouselSelected {
+    filter: blur(0) grayscale(0);
+}
+
+#carousel-info {
+    transition: all .5s ease;
+    width: 500px;
+    margin: 40px auto;
+    text-align: center;
 }
 
 /*#endregion*/
