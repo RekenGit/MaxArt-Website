@@ -1,5 +1,83 @@
 #realisation-view {
-    height: 500px;
-    padding-top: var(--content-view-padding);
+    height: 700px;
+    padding-top: calc(var(--content-view-padding) + 200px);
     background-color: var(--main-color);
+    display: flex;
+}
+
+#realisation-view-content-background {
+    position: relative;
+    left: 50%;
+}
+
+#realisation-view-shape-one {
+    position: absolute;
+    display: inline-block;
+    background-color: var(--second-main-color);
+    width: 920px;
+    height: 494px;
+    clip-path: polygon(0 16%, 95% 0, 100% 68%, 4% 100%);
+    left: calc(-140px - 460px);
+}
+
+#realisation-view-shape-two {
+    position: absolute;
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 920px;
+    height: 494px;
+    clip-path: polygon(18% 18%, 100% 0, 94% 100%, 0 71%);
+    left: calc(140px - 460px);
+    top: 140px;
+}
+
+#realisation-view-content {
+    width: 1120px;
+    height: 360px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+#realisation-view-content-title {
+    height: 80px;
+    margin-left: 200px;
+}
+
+#realisation-view-content-company {
+    height: 170px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+#realisation-view-content-company>* {
+    scroll-snap-align: start;
+}
+
+#realisation-view-content-company::-webkit-scrollbar {
+    margin-right: 10px;
+}
+
+#realisation-view-content-company::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#realisation-view-content-company::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+#realisation-view-content-company::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-text-color);
+}
+
+#realisation-view-content-company img {
+    max-height: 160px;
 }

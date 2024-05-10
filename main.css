@@ -39,6 +39,12 @@ h1 {
     font-style: bold;
     font-size: 60px;
     text-shadow: 3px 3px 2px rgb(0 0 0 / 30%);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h2 {
@@ -47,19 +53,32 @@ h2 {
     font-size: 50px;
     text-shadow: 3px 3px 2px rgb(0 0 0 / 30%);
     text-transform: uppercase;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h3 {
     color: var(--main-color);
     font-weight: 600;
     font-size: 40px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h4 {
     color: var(--main-color);
     font-weight: 300;
-    font-size: 35px;
-    margin-top: 0;
+    font-size: 25px;
+    margin: 0;
 }
 
 dl {
@@ -79,6 +98,15 @@ a:hover {
     color: var(--main-text-color);
 }
 
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #start-view {
     height: 100vh;
 }
@@ -86,6 +114,33 @@ a:hover {
 #content-view {
     background-color: var(--second-main-color);
     width: 100vw;
+}
+
+#footer {
+    width: calc(100% - 200px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--second-main-color);
+    color: white;
+    padding: 0 100px;
+}
+
+#footer i {
+    font-size: 24px;
+    color: white;
+    transition: all 0.2s;
+}
+
+#footer i:hover {
+    color: var(--main-text-color);
+}
+
+#footer-brands {
+    min-width: 160px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*#endregion*/
