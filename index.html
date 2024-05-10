@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaxArt</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="content-style/contact-view.css">
+    <link rel="stylesheet" href="content-style/galery-view.css">
+    <link rel="stylesheet" href="content-style/info-view.css">
+    <link rel="stylesheet" href="content-style/offer-view.css">
+    <link rel="stylesheet" href="content-style/realisation-view.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ee33de17ff.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +26,11 @@
             </div>
             <div id="menu-bar-navigation">
                 <a href="#start-view">Strona główna</a>
-                <a href="#contact-view">Kontakt</a>
                 <a href="#info-view">O nas</a>
+                <a href="#contact-view">Kontakt</a>
+                <a href="#offer-view">Oferta</a>
                 <a href="#galery-view">Galeria</a>
                 <a href="#realisation-view">Realizacja</a>
-                <a href="#offer-view">Oferta</a>
             </div>
         </div>
         <div class="gray-element" id="contact-scroll-bar">
@@ -34,6 +39,18 @@
         </div>
     </div>
     <div id="content-view">
+        <div id="info-view">
+            <div class="info-view-conntent-part">
+                <div class="info-view-conntent-part-photo">
+                    <img src="Images/temp.jpg" alt="temp.jpg">
+                </div>
+                <div class="info-view-conntent-part-text">
+                    <h4>
+                        MaxArt Sp. z o.o. jest rodzinną firmą świadczącą usługi kompleksowego wykończenia wnętrz głównie na dynamicznie rozwijającym się rynku warszawskim. Naszą firmę tworzą profesjonaliści z dużym doświadczeniem. Dzięki temu jesteśmy w stanie podejść do każdego projektu wszechstronnie, łącząc różnorodne kompetencje w celu stworzenia wyjątkowych i funkcjonalnych przestrzeni. Gwarantuje to, że wszystkie prace są prowadzone kompleksowo i na najwyższym poziomie.    
+                    </h4>
+                </div>
+            </div>
+        </div>
         <div id="contact-view">
             <div id="contact-view-content-section">
                 <svg id="contact-view-box-gray" xmlns="http://www.w3.org/2000/svg" width="923" height="494" viewBox="0 0 923 494" fill="none">
@@ -45,7 +62,7 @@
                         <tbody>
                             <tr>
                                 <td>Nr tel:</td>
-                                <td>601 288 794</td>
+                                <td>601 277 794</td>
                             </tr>
                             <tr>
                                 <td>Mail:</td>
@@ -72,58 +89,60 @@
                 <i class="fa-solid fa-scissors"></i>
             </div>
         </div>
-        <div id="info-view">
-            <div class="info-view-conntent-part">
-                <div class="info-view-conntent-part-photo">
-                    <img src="Images/temp.jpg" alt="temp.jpg">
+        <div id="offer-view">
+            <div class="offer-view-conntent-part">
+                <div class="offer-view-conntent-part-icon">
+                    <i class="fa-solid fa-hammer"></i>
                 </div>
-                <div class="info-view-conntent-part-text">
-                    <h4>MaxArt Sp. z o.o. jest rodzinną firmą świadczącą usługi kompleksowego wykończenia wnętrz głównie na dynamicznie rozwijającym się rynku warszawskim. Naszą firmę tworzą profesjonaliści z dużym doświadczeniem. </h4>
-                </div>
-            </div>
-            <div class="info-view-conntent-part">
-                <div class="info-view-conntent-part-text">
-                    <h4>Dzięki temu jesteśmy w stanie podejść do każdego projektu wszechstronnie, łącząc różnorodne kompetencje w celu stworzenia wyjątkowych i funkcjonalnych przestrzeni. Gwarantuje to, że wszystkie prace są prowadzone kompleksowo i na najwyższym poziomie.</h4>
-                </div>
-                <div class="info-view-conntent-part-photo">
-                    <img src="Images/temp.jpg" alt="temp.jpg">
-                </div>
-            </div>
-            <div class="info-view-conntent-part">
-                <div class="info-view-conntent-part-photo">
-                    <img src="Images/temp.jpg" alt="temp.jpg">
-                </div>
-                <div class="info-view-conntent-part-text">
+                <div class="offer-view-conntent-part-text">
                     <dl>
-                        <dt><h4>Nasza oferta remontowa mieszkań, domów, biur oraz obiektów użyteczności publicznej to między innymi:</h4></dt>
-                        <dd>- wykonywanie gładzi gipsowych</dd>
-                        <dd>- malowanie</dd>
-                        <dd>- montaż drzwi, okien, parapetów</dd>
-                        <dd>- wyburzanie i stawianie ścian</dd>
-                        <dd>- tworzenie i modernizacja instalacji elektrycznych</dd>
-                        <dd>- tworzenie i modernizacja instalacji hydrauliczno-sanitarnych</dd>
-                        <dd>- zabudowy karton gips</dd>
-                        <dd>- sufity podwieszane</dd>
-                        <dd>- biały montaż</dd>
-                        <dd>- układanie paneli, deski podłogowej</dd>
-                        <dd>- układanie glazury i terakoty</dd>
-                        <dt><h4>Dodatkowo świadczymy usługi:</h4></dt>
-                        <dd>- kosztorysowe - tworzymy kosztorysy inwestorskie</dd>
-                        <dd>- projektowe - tworzymy kompleksowe projekty architektoniczne wnętrz</dd>
-                        <dd>- administracyjne - techniczna administracja budynków obejmująca nadzór i przegląd, konserwację oraz naprawę
-                        </dd>
+                        <dt>
+                            <h4>
+                                Nasza oferta remontowa mieszkań, domów, biur oraz obiektów użyteczności publicznej to między innymi:
+                            </h4>
+                        </dt>
+                        <dd>wykonywanie gładzi gipsowych</dd>
+                        <dd>malowanie</dd>
+                        <dd>montaż drzwi, okien, parapetów</dd>
+                        <dd>wyburzanie i stawianie ścian</dd>
+                        <dd>tworzenie i modernizacja instalacji elektrycznych</dd>
+                        <dd>tworzenie i modernizacja instalacji hydrauliczno-sanitarnych</dd>
+                        <dd>zabudowy karton gips</dd>
+                        <dd>sufity podwieszane</dd>
+                        <dd>biały montaż</dd>
+                        <dd>układanie paneli, deski podłogowej</dd>
+                        <dd>układanie glazury i terakoty</dd>
                     </dl>
                 </div>
             </div>
-            <div class="info-view-conntent-part">
-                <div class="info-view-conntent-part-text">
-                    <h4>Stawiamy na przejrzystość współpracy i na każdym etapie prac jesteśmy w stałym kontakcie z inwestorem. 
+            <div class="offer-view-conntent-part">
+                <div class="offer-view-conntent-part-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <div class="offer-view-conntent-part-text">
+                    <dl>
+                        <dt>
+                            <h4>
+                                Dodatkowo świadczymy usługi:
+                            </h4>
+                        </dt>
+                        <dd><b>kosztorysowe</b> - tworzymy kosztorysy inwestorskie</dd>
+                        <dd><b>projektowe</b> - tworzymy kompleksowe projekty architektoniczne wnętrz</dd>
+                        <dd><b>administracyjne</b> - techniczna administracja budynków obejmująca nadzór i przegląd, konserwację oraz naprawę</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="offer-view-conntent-part">
+                <div class="offer-view-conntent-part-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="offer-view-conntent-part-text">
+                    <h4>
+                        Stawiamy na przejrzystość współpracy i na każdym etapie prac jesteśmy w stałym kontakcie z inwestorem. 
                         Pracujemy na podstawie umowy, dzięki temu klient ma pewność, że remont wykonujemy dbając o każdy detal. 
                         Służymy również radą jeżeli pojawią się jakiekolwiek wątpliwości.
-                        Eliminuje to wszelkie błędy i pozwala na sprawną współpracę.</h4>
-                </div>
-                <div class="info-view-conntent-part-photo">
-                    <img src="Images/temp.jpg" alt="temp.jpg">
+                        Eliminuje to wszelkie błędy i pozwala na sprawną współpracę.
+                    </h4>
                 </div>
             </div>
         </div>
@@ -131,35 +150,16 @@
             <h1 id="galery-view-title">Galeria zdjęć</h1>
             <div id="galery-view-content">
                 <div id="carousel">
-                    <div class="item carousel1">
-
-                    </div>
-                    <div class="item carousel2 carouselNext">
-
-                    </div>
-                    <div class="item carousel3 carouselSelected">
-
-                    </div>
-                    <div class="item carousel4 carouselPrevious">
-
-                    </div>
-                    <div class="item carousel5">
-
-                    </div>
+                    <div class="item carousel1"></div>
+                    <div class="item carousel2 carouselNext"></div>
+                    <div class="item carousel3 carouselSelected"></div>
+                    <div class="item carousel4 carouselPrevious"></div>
+                    <div class="item carousel5"></div>
                 </div>
                 <div id="carousel-info"> </div>
             </div>
         </div>
         <div id="realisation-view"></div>
-        <div id="offer-view">
-            <h1>Test test 1234 Witam państwa [h1]</h1>
-            <h2>Test test 1234 Witam państwa [h2]</h2>
-            <h3>Test test 1234 Witam państwa [h3]</h3>
-            <h4>Test test 1234 Witam państwa [h4]</h4>
-            <h5>Test test 1234 Witam państwa [h5]</h5>
-            <h6>Test test 1234 Witam państwa [h6]</h6>
-            <p>Test test 1234 Witam państwa [p]</p>
-        </div>
     </div>
 </body>
 <script type="text/javascript" src="menu.js"></script>

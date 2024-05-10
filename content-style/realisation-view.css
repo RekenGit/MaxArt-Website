@@ -1,0 +1,5 @@
+#realisation-view {
+    height: 500px;
+    padding-top: var(--content-view-padding);
+    background-color: var(--main-color);
+}

@@ -13,6 +13,10 @@
 }
 
 /*#region MainView*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: var(--page-height);
     margin: 0;
@@ -53,8 +57,9 @@ h3 {
 
 h4 {
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 300;
     font-size: 35px;
+    margin-top: 0;
 }
 
 dl {
@@ -81,34 +86,6 @@ a:hover {
 #content-view {
     background-color: var(--second-main-color);
     width: 100vw;
-}
-
-#contact-view {
-    padding-top: var(--content-view-padding);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#info-view {
-    height: fit-content;
-    padding-top: var(--content-view-padding);
-}
-
-#galery-view {
-    padding-top: calc(var(--content-view-padding) + 300px);
-}
-
-#realisation-view {
-    height: 500px;
-    padding-top: var(--content-view-padding);
-    background-color: var(--main-color);
-}
-
-#offer-view {
-    padding-top: var(--content-view-padding);
-    background-color: var(--main-color);
 }
 
 /*#endregion*/
@@ -143,228 +120,6 @@ a:hover {
     background-color: var(--second-main-color);
     transition: all 2s ease;
 }
-
-/*#endregion*/
-
-/*#region ContactViewElements*/
-#contact-scroll-bar {
-    height: 500px;
-    width: 120%;
-    position: absolute;
-    transform: rotate(-4deg);
-    left: -10%;
-    top: calc(100vh - 150px);
-    z-index: 0;
-}
-
-#contact-catch-phrase {
-    color: var(--main-text-color);
-    position: relative;
-    padding: 0 10% 0 40%;
-    top: -150px;
-    text-align: center;
-}
-
-#contact-scroll-icon {
-    font-size: 30px;
-    padding: 5px 5px 30px 5px;
-    border: 3px solid black;
-    border-radius: 20px;
-    position: relative;
-    margin-left: calc(50% - 11px);
-    top: -120px;
-    transform: rotate(4deg);
-    animation: contact-scroll-icon-moving 1.4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes contact-scroll-icon-moving {
-    from {
-        padding: 5px 5px 30px 5px;
-    }
-
-    100% {
-        padding: 30px 5px 5px 5px;
-    }
-}
-
-#contact-view-content-section {
-    width: 923px;
-    height: 494px;
-    position: relative;
-}
-
-#contact-view-box-gray {
-    z-index: 0;
-    position: absolute;
-    top: 3px;
-    filter: drop-shadow(3px 4px 2px #22222240);
-}
-
-#contact-view-box-conntent {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    z-index: 1;
-    position: relative;
-}
-
-#contact-view-mail-section {
-    width: 312px;
-    height: 512px;
-}
-
-#contact-view-mail-shape {
-    position: relative;
-    left: -200px;
-    background-color: var(--main-color);
-    border-radius: 200px 0px 200px 0px;
-    width: 420px;
-    height: 420px;
-    transform: rotate(20deg);
-    margin-top: 56px;
-    margin-left: 56px;
-    filter: drop-shadow(3px 4px 2px #22222240);
-}
-
-#contact-view-mail-content {
-    transform: rotate(-20deg);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-}
-
-#contact-view-mail-content:hover img {
-    transform: rotate(5deg);
-}
-
-#contact-view-mail-content img {
-    transition: all 0.2 ease;
-}
-
-#contact-view-mail-content p {
-    font-size: 30px;
-}
-
-#contact-view-data tr td:first-child {
-    width: 150px;
-}
-
-/*#endregion*/
-
-/*#region InfoViewElements*/
-.info-view-conntent-part {
-    width: 90%;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.info-view-conntent-part-photo {
-    width: 800px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    filter: drop-shadow(5px 5px 2px #22222280);
-}
-
-.info-view-conntent-part-photo img {
-    width: 100%;
-}
-
-.info-view-conntent-part-text {
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*#endregion*/
-
-/*#region GaleryViewElements*/
-#galery-view-title {
-    width: fit-content;
-    margin: auto;
-    letter-spacing: 8px;
-    position: relative;
-    top: 0;
-    transition: top .8s ease;
-}
-
-.galery-title-popup {
-    top: -300px !important;
-}
-
-#galery-view-content {
-    width: 100%;
-    height: 400px;
-    background-color: var(--main-color);
-    transform-style: preserve-3d;
-}
-
-#galery-view-content:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 301px;
-    background-color: var(--main-color);
-    clip-path: polygon(0 50%, 0% 100%, 100% 100%, 100% 70%, 80% 0);
-    top: -300px;
-}
-
-#carousel {
-    height: 400px;
-    width: 600px;
-    margin: 0 auto;
-}
-
-#carousel .item {
-    transition: all .3s ease;
-    background-image: url("Images/carousel/carTemp1.png");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    z-index: 1;
-    height: 400px;
-    width: 600px;
-    filter: blur(2px) grayscale(50%);
-}
-
-#carousel .item:hover {
-    filter: blur(0) grayscale(0);
-}
-
-#carousel .carouselSelected {
-    filter: blur(0) grayscale(0);
-}
-
-#carousel-info {
-    transition: all .5s ease;
-    width: 500px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-/*#endregion*/
-
-/*#region RealisationViewElements*/
-
-/*#endregion*/
-
-/*#region OfferViewElements*/
 
 /*#endregion*/
 
@@ -430,10 +185,12 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    filter: drop-shadow(3px 4px 2px #22222240);
 }
 
 .menu-bar-hidden {
     left: -500px !important;
+    filter: none !important;
 }
 
 #menu-bar div {
@@ -457,7 +214,6 @@ a:hover {
     height: 80px;
 }
 
-
 #menu-bar-navigation {
     margin: 0 100px;
     display: flex;
@@ -468,6 +224,7 @@ a:hover {
     letter-spacing: 2px;
     justify-content: space-evenly;
     height: calc(100% - 120px);
+    max-height: 700px;
     text-transform: uppercase;
 }
 
