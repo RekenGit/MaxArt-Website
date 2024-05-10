@@ -361,6 +361,28 @@ a:hover {
 /*#endregion*/
 
 /*#region RealisationViewElements*/
+#realisation-view-content {
+    display: flex;
+}
+
+#realisation-view-shape-one {
+    position: relative;
+    background-color: #D9D9D9;
+    width: 923px;
+    height: 494px;
+    margin-left: 500px;
+    clip-path: polygon(10% 0%, 0% 100%, 1000% 100%, 100% 100%, 100% 20%);
+}
+
+#realisation-view-shape-too {
+    background-color: var(--second-main-color);
+    width: 923px;
+    height: 494px;
+    margin-left: 500px;
+    clip-path: polygon(20% 40%, 0% 100%, 0% 80%, 95% 100%, 100% 0%);
+}
+
+#realisation-view-catomer-logos {}
 
 /*#endregion*/
 
